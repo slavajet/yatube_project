@@ -19,6 +19,7 @@ class Post(models.Model):
         null=True,
     )
 
+
 class Group(models.Model):
     title = models.CharField(max_length=30, unique=True)
     slug = models.SlugField()
@@ -26,4 +27,3 @@ class Group(models.Model):
 
     def __str__(self):
         return self.title
-    
